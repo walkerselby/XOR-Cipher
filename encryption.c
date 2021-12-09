@@ -24,10 +24,8 @@ int cipher(){
         for (int i = 0; i < ret; i++) { //XOR the number of inputs from the buffer
             modified[i] = (char) (buffer[i] ^ keyC);
         }
+        fwrite(modified,sizeof(char), ret, fp2);
 
-        if(ret != 0) {
-            fwrite(modified,sizeof(char), ret, fp2);
-        }
     }
 
     fclose(fp1);
