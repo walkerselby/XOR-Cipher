@@ -1,6 +1,7 @@
 //Walker Selby - 7 December 2021
 //This program uses XOR to cipher or decrypt a file and export the encrypted values as a new file.
 //Program arguments: ./project.out <key> <file1> <file2> [Debug Messages? true/false]
+//Key is a value from 0 to 255
 
 #include "header.h"
 
